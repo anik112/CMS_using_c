@@ -323,8 +323,8 @@ js:
     int j,k=1;
     char get_pas[20],com_pas[20];
 
-    pas=fopen("pass.dat","r");
-    fscanf(pas,"%s",&com_pas);
+    // pas=fopen("pass.dat","r");
+    // fscanf(pas,"%s",&com_pas);
 
         printf("\n\n\t\t\t\tPlease type administration password:\n\n\t\t\t\t\t\t");
         int i;
@@ -341,7 +341,7 @@ js:
         gotoxy(45,10);
         fflush(stdin);
         gets(get_pas);
-        if((k=strcmp(get_pas,com_pas))== 0){
+        if((k=strcmp(get_pas,"12345"))== 0){
          system("cls");
          return 111;
         }
@@ -12436,12 +12436,9 @@ int close_pro(int key){
     if(key==006){
 
      int i,j,o;
-     char ar[41]={"=>> Anik   -- ' Semester 7th' -- 'CMT' "};
-     char as[41]={"=>> Sabbir -- ' Semester 7th' -- 'CMT' "};
-     char ap[41]={"=>> Shuvo  -- ' Semester 7th' -- 'CMT' "};
-     char at[41]={"=>> Badal  -- ' Semester 7th' -- 'CMT' "};
-     char ay[41]={"=>> Maruf  -- ' Semester 7th' -- 'CMT' "};
-     char aw[41]={"=>> Methun -- ' Semester 7th' -- 'CMT' "};
+     char as[41]={" paulanik112@gmail.com "};
+     char ap[41]={" Collage Management System "};
+     char aw[41]={" paulanik.wb@gmail.com "};
 
     /* Fast table draw */
 
@@ -12486,33 +12483,28 @@ int close_pro(int key){
     gotoxy(48,9);
     printf(" Good Bey! ");
     gotoxy(27,11);
-    printf("Programmer:");
+    printf("Developer:");
 
 
     gotoxy(33,13);
     for(i=0;i<41;i++){
         Sleep(60);
         printf("%c", ap[i]);
-//        Sleep(60);
-//        printf("%c", ap[i]);
-//        //Sleep(60);
-//        printf("%c", at[i]);
-//       // Sleep(60);
-//        printf("%c", ay[i]);
     }
 
     gotoxy(33,14);
     for(i=0;i<41;i++){
-    Sleep(60);
-    printf("%c", as[i]);
+        Sleep(60);
+        printf("%c", as[i]);
     }
 
     gotoxy(33,15);
     for(i=0;i<41;i++){
-    Sleep(60);
-    printf("%c", aw[i]);
+        Sleep(60);
+        printf("%c", aw[i]);
     }
 
+    /*
     gotoxy(33,16);
     for(i=0;i<41;i++){
     Sleep(60);
@@ -12530,7 +12522,7 @@ int close_pro(int key){
     Sleep(60);
     printf("%c", ar[i]);
     }
-
+*/
 
     gotoxy(36,20);
     printf(" Closing College Management System ");
